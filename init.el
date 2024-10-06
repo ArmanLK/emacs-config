@@ -4,7 +4,10 @@
 (package-initialize)
 
 (setq visible-bell nil ring-bell-function 'flash-mode-line)
-(setq custom-file "~/.emacs.d/custom.el")
+
+(setq custom-file (concat user-emacs-directory "custom.el"))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
