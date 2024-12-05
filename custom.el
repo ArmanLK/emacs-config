@@ -5,10 +5,14 @@
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(cursor-type 'box)
+ '(custom-enabled-themes '(gruber-darker))
  '(custom-safe-themes
-   '("e13beeb34b932f309fb2c360a04a460821ca99fe58f69e65557d6c1b10ba18c7" "7b8f5bbdc7c316ee62f271acf6bcd0e0b8a272fdffe908f8c920b0ba34871d98" "dfab4d4e2904967f208647d14b15015a613c4ab904db491116a7c0968e44a115" default))
+   '("01a9797244146bbae39b18ef37e6f2ca5bebded90d9fe3a2f342a9e863aaa4fd" "e13beeb34b932f309fb2c360a04a460821ca99fe58f69e65557d6c1b10ba18c7" "7b8f5bbdc7c316ee62f271acf6bcd0e0b8a272fdffe908f8c920b0ba34871d98" "dfab4d4e2904967f208647d14b15015a613c4ab904db491116a7c0968e44a115" default))
+ '(initial-buffer-choice t)
+ '(initial-scratch-message
+   ";; hello there I don't like E-Lisp hoe you don't like it too!!\12\12")
  '(package-selected-packages
-   '(ample-theme calmer-forest-theme cherry-blossom-theme gruber-darker-theme zig-mode rust-mode rainbow-mode rainbow-delimiters magit gruvbox-theme flycheck-rust company catppuccin-theme)))
+   '(rainbow-delimiters evil evil-better-visual-line catppuccin-theme cargo-mode flycheck-rust rust-mode gruber-darker-theme gruvbox-theme company)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

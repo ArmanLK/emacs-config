@@ -3,6 +3,11 @@
 
 (package-initialize)
 
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(package-install-selected-packages)
+
 (setq visible-bell nil ring-bell-function 'flash-mode-line)
 
 (setq custom-file (concat user-emacs-directory "custom.el"))
@@ -13,7 +18,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;(evil-mode)
+(evil-mode)
 (global-display-line-numbers-mode)
 (setq display-line-numbers-type 'relative)
 
@@ -27,7 +32,7 @@
 
 (add-hook 'emacs-lisp-mode-hook
  	  (lambda ()
- 	    (rainbow-delimiters-mode-enable)
+					;(rainbow-delimiters-mode-enable)
 	    (company-mode)))
 
 (add-hook 'c-mode-hook
