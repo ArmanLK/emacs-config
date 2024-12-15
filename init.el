@@ -32,7 +32,7 @@
 
 (add-hook 'emacs-lisp-mode-hook
  	  (lambda ()
-					;(rainbow-delimiters-mode-enable)
+	    (rainbow-delimiters-mode-enable)
 	    (company-mode)))
 
 (add-hook 'c-mode-hook
