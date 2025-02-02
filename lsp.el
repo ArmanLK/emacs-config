@@ -42,6 +42,16 @@
 	    (company-mode)
 	    (eglot-ensure)))
 
+(add-hook 'js-mode-hook
+	  (lambda ()
+	    (company-mode)
+	    (eglot-ensure)))
+
+(add-hook 'typescript-mode-hook
+	  (lambda ()
+	    (company-mode)
+	    (eglot-ensure)))
+
 (use-package eglot
   :config
   (add-to-list 'eglot-server-programs
@@ -54,14 +64,3 @@
 	       '(js-mode . ("npx"
 			    "typescript-language-server"
 			    "--stdio"))))
-
-
-(add-hook 'js-mode
-	  (lambda ()
-	    (company-mode)
-	    (eglot-ensure)))
-
-(add-hook 'typescript-mode
-	  (lambda ()
-	    (company-mode)
-	    (eglot-ensure)))
