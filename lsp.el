@@ -7,35 +7,70 @@
 	    (rainbow-delimiters-mode-enable)
 	    (company-mode)))
 
-(add-hook 'c-mode-hook
+(add-hook 'c-ts-mode-hook
+	  (lambda()
+	    (eglot-ensure)))
+
+(add-hook 'c++-ts-mode-hook
+	  (lambda()
+	    (eglot-ensure)))
+
+(add-hook 'clojure-ts-mode
 	  (lambda()
 	    (eglot-ensure)
-	    (eglot-inlay-hints-mode nil)))
+	    (company-mode)))
+
+(add-hook 'python-ts-mode-hook
+	  (lambda()
+	    (eglot-ensure)
+	    (company-mode)))
+
+(add-hook 'rust-ts-mode-hook
+	  (lambda()
+	    (eglot-ensure)
+	    (company-mode)))
+
+(add-hook 'javascript-ts-mode-hook
+	  (lambda ()
+	    (company-mode)
+	    (eglot-ensure)))
+
+(add-hook 'typescript-ts-mode-hook
+	  (lambda ()
+	    (company-mode)
+	    (eglot-ensure)))
+
+(add-hook 'c-mode-hook
+	  (lambda()
+	    (eglot-ensure)))
 
 (add-hook 'c++-mode-hook
 	  (lambda()
+	    (eglot-ensure)))
+
+(add-hook 'clojure-mode
+	  (lambda()
 	    (eglot-ensure)
-	    (eglot-inlay-hints-mode nill)))
+	    (company-mode)))
 
 (add-hook 'zig-mode-hook
 	  (lambda()
-	    (eglot-ensure)
-	    (eglot-inlay-hints-mode nill)))
+	    (eglot-ensure)))
 
 (add-hook 'go-mode-hook
 	  (lambda()
 	    (eglot-ensure)
-	    (eglot-inlay-hints-mode nil)))
+	    (company-mode)))
 
 (add-hook 'python-mode-hook
 	  (lambda()
 	    (eglot-ensure)
-	    (eglot-inlay-hints-mode nil)))
+	    (company-mode)))
 
 (add-hook 'rust-mode-hook
 	  (lambda()
 	    (eglot-ensure)
-	    (eglot-inlay-hints-mode nill)))
+	    (company-mode)))
 
 (add-hook 'tex-mode-hook
 	  (lambda ()
