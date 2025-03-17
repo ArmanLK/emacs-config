@@ -4,6 +4,7 @@ transient/
 eln-cache/
 games/
 tree-sitter/
+eshell/
 
 *~
 \#*\#
