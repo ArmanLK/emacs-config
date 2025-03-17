@@ -3,6 +3,7 @@ elpa/
 transient/
 eln-cache/
 games/
+tree-sitter/
 
 *~
 \#*\#

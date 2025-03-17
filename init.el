@@ -11,6 +11,8 @@
 	      glsl-mode
 	      gruber-darker-theme
 	      gruvbox-theme
+	      kotlin-mode
+	      kotlin-ts-mode
 	      magit
 	      rainbow-delimiters
 	      rust-mode
@@ -30,7 +32,7 @@
 
 (setq visible-bell nil ring-bell-function 'flash-mode-line)
 
-(setq-local custom-file (concat user-emacs-directory "custom.el"))
+(setq custom-file (concat user-emacs-directory "custom.el"))
 (when (file-exists-p custom-file)
   (load custom-file))
 
